@@ -1,0 +1,1 @@
+docker run -it -v $(pwd):$(pwd) -e HOME=$(pwd) -w $(pwd) -u $(id -u):$(id -g) --network=host dasf-seismic:cpu dask worker tcp://143.106.16.194:8786 
